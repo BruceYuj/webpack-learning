@@ -1,3 +1,6 @@
 .hello {
   transform: translate(100px, 100px);
 }
+body {
+  background: url(./demo.png);
+}

@@ -13,3 +13,6 @@
   - 测试css-loader的css module功能
 4. [demo-4](./demo-4)
   - 测试file-loader打包字体文件
+5. [demo-5](./demo-5)
+  - 测试html-webpack-plugin
+  - 测试clean-webpack-plugin
