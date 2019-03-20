@@ -1,7 +1,7 @@
 {
-  "name": "demo-2",
+  "name": "webpack-demo-3",
   "version": "1.0.0",
-  "description": "测试webpack打包样式文件，主要测试postcss-loader(autoprefixer), sass-loader, css-loader, style-loader的功能,并验证loader chain",
+  "description": "测试css-loader的css module功能",
   "private": true,
   "scripts": {
     "build": "webpack"
@@ -12,12 +12,10 @@
     "autoprefixer": "^9.5.0",
     "css-loader": "^2.1.1",
     "file-loader": "^3.0.1",
-    "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "url-loader": "^1.1.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   }
