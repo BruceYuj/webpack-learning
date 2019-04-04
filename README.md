@@ -16,3 +16,11 @@
 5. [demo-5](./demo-5)
   - 测试html-webpack-plugin
   - 测试clean-webpack-plugin
+6. [demo-6](./demo-6)
+  - 测试entry和output配置
+7. [demo-7](./demo-7)
+  - devtool: 测试source map
+8. [demo-8](./demo-8)
+  - devtool: 测试监听文件变化自动重新打包的三种方式
+9. [demo-9](./demo-9)
+  - devtool: 测试HMR
