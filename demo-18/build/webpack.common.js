@@ -2,18 +2,10 @@ const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const cleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
-
+console.log(require.resolve('../src/globals.js'));
 module.exports = {
-  mode: 'development',
   entry: {
-    bundle: './src/index.js'
-  },
-  devtool: 'cheap-module-eval-source-map',
-  devServer: {
-    contentBase: './dist',
-    open: true,
-    hot: true,
-    // hotOnly: true
+    main: './src/index.js'
   },
   module: {
     rules: [{
@@ -50,9 +42,11 @@ module.exports = {
         'postcss-loader'
       ]
     }, {
-      test: /\.js$/,
-      exclude: /node-modules/,
-      use: ['babel-loader']
+      test: require.resolve('../src/index.js'),
+      use: 'imports-loader?this=>window'
+    }, {
+      test: require.resolve('../src/globals.js'),
+      use: 'exports-loader?file,parse=helpers.parse'
     }]
   },
   plugins: [
@@ -60,11 +54,14 @@ module.exports = {
     new htmlWebpackPlugin({
       template: './src/index.html'
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.ProvidePlugin({
+      _: 'lodash'
+    })
   ],
   output: {
     filename: '[name].js',
+    chunkFilename: '[name].js',
     pathinfo: true,
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, '../dist')
   }
 }

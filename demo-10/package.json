@@ -1,19 +1,16 @@
 {
   "name": "webpack-demo-9",
   "version": "1.0.0",
-  "description": "测试babel",
+  "description": "测试HMR",
   "private": true,
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --watch",
     "start": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
     "autoprefixer": "^9.5.0",
-    "babel-loader": "^8.0.5",
     "clean-webpack-plugin": "^2.0.1",
     "css-loader": "^2.1.1",
     "file-loader": "^3.0.1",
@@ -25,9 +22,5 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
-  },
-  "dependencies": {
-    "@babel/polyfill": "^7.4.3",
-    "core-js": "^2.6.5"
   }
 }

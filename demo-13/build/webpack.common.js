@@ -1,19 +1,11 @@
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const cleanWebpackPlugin = require('clean-webpack-plugin');
-const webpack = require('webpack');
 
 module.exports = {
-  mode: 'development',
   entry: {
+    lodash: './src/lodash.js',
     bundle: './src/index.js'
-  },
-  devtool: 'cheap-module-eval-source-map',
-  devServer: {
-    contentBase: './dist',
-    open: true,
-    hot: true,
-    // hotOnly: true
   },
   module: {
     rules: [{
@@ -59,12 +51,11 @@ module.exports = {
     new cleanWebpackPlugin(),
     new htmlWebpackPlugin({
       template: './src/index.html'
-    }),
-    new webpack.HotModuleReplacementPlugin()
+    })
   ],
   output: {
     filename: '[name].js',
     pathinfo: true,
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, '../dist')
   }
 }

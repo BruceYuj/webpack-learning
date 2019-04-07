@@ -1,8 +1,9 @@
 {
-  "name": "webpack-demo-9",
+  "name": "webpack-demo-11",
   "version": "1.0.0",
-  "description": "测试babel",
+  "description": "测试tree shaking",
   "private": true,
+  "sideEffects": false,
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server"

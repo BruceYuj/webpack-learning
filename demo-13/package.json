@@ -1,11 +1,12 @@
 {
-  "name": "webpack-demo-9",
+  "name": "webpack-demo-13",
   "version": "1.0.0",
-  "description": "测试babel",
+  "description": "测试code split",
   "private": true,
+  "sideEffects": false,
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server"
+    "build": "webpack --config ./build/webpack.prod.js",
+    "dev": "webpack-dev-server  --config ./build/webpack.dev.js"
   },
   "author": "",
   "license": "ISC",
@@ -24,10 +25,12 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1"
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.3",
-    "core-js": "^2.6.5"
+    "core-js": "^2.6.5",
+    "lodash": "^4.17.11"
   }
 }
