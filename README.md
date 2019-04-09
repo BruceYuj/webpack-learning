@@ -44,3 +44,9 @@
   - 测试shimming: shimming globals
 19. [demo-19](./demo-19)
   - 测试webpack打包过程中使用环境变量
+20. [demo-20](./demo-20)
+  - 测试webpack打包library
+21. [demo-21](./demo-21)
+  - 测试ESlint和webpack的结合
+22. [demo-22](./demo-22)
+  - 测试webpack的resolve，以及dllPlugin
