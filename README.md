@@ -50,3 +50,11 @@
   - 测试ESlint和webpack的结合
 22. [demo-22](./demo-22)
   - 测试webpack的resolve，以及dllPlugin
+23. [demo-23](./demo-23)
+  - 测试webpack多页面打包
+24. [demo-24](./demo-24)
+  - 测试手写一个loader
+25. [demo-25](./demo-25)
+  - 手写plugin
+26. [demo-26](./demo-26)
+  - 手写基础的webpack

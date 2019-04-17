@@ -1,0 +1,16 @@
+{
+  "name": "demo-26",
+  "version": "1.0.0",
+  "description": "手写基础的模块打包",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/parser": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/traverse": "^7.4.3"
+  }
+}
